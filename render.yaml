@@ -11,11 +11,3 @@ services:
     envVars:
       - key: ALLOWED_ORIGINS
         sync: false
-*** Add File: cloud-computing-assignment/.gitignore
-.DS_Store
-.vscode/
-__pycache__/
-*.py[cod]
-.venv/
-.env
-.pytest_cache/
