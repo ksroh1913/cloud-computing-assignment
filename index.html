@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="노경수의 개인 소개와 FastAPI 백엔드 연동 실습 페이지"
+    />
+    <meta name="theme-color" content="#f5f2ea" />
+    <title>노경수 | Personal Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./config.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문 바로가기</a>
+
+    <header class="site-header" aria-label="주요 메뉴">
+      <a class="brand" href="#home" aria-label="처음으로">
+        <span class="brand-mark" aria-hidden="true">KS</span>
+        <span>NOH KYEONG SOO</span>
+      </a>
+
+      <nav class="nav-links" aria-label="페이지 내 이동">
+        <a href="#about">소개</a>
+        <a href="#interests">관심 분야</a>
+        <a href="#connection">API 연동</a>
+      </nav>
+
+      <button
+        class="theme-button"
+        id="theme-toggle"
+        type="button"
+        aria-label="어두운 화면으로 전환"
+        aria-pressed="false"
+      >
+        <span aria-hidden="true">◐</span>
+        <span class="theme-label">Dark</span>
+      </button>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">HOUSING · DATA · TECHNOLOGY</p>
+          <h1 id="hero-title">
+            현장의 질문을<br />
+            <span>데이터와 기술로</span> 풉니다.
+          </h1>
+          <p class="hero-description">
+            안녕하세요, 노경수입니다. 주택·도시 분야의 실무 경험을 바탕으로
+            데이터 분석과 디지털 기술을 공부하고 있습니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#connection">API 연동 확인</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/ksroh1913"
+              target="_blank"
+              rel="noreferrer"
+            >GitHub 방문</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="노경수 프로필 요약">
+          <div class="profile-card">
+            <div class="profile-monogram" aria-hidden="true">KS</div>
+            <div>
+              <p class="profile-name">노경수</p>
+              <p class="profile-role">Problem Solver</p>
+            </div>
+          </div>
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <p class="visual-note note-one" aria-hidden="true">Policy</p>
+          <p class="visual-note note-two" aria-hidden="true">Data</p>
+          <p class="visual-note note-three" aria-hidden="true">Cloud</p>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="section-number">01</p>
+          <div>
+            <p class="eyebrow">ABOUT ME</p>
+            <h2 id="about-title">경험과 배움을 연결합니다.</h2>
+          </div>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead reveal">
+            제도와 현장을 이해하는 실무 감각에 데이터 기반의 사고를 더해,
+            복잡한 문제를 명확하고 실행 가능한 방식으로 정리하는 데 관심이
+            있습니다.
+          </p>
+          <div class="about-facts reveal">
+            <dl>
+              <div>
+                <dt>현재</dt>
+                <dd>주택·도시 분야 실무</dd>
+              </div>
+              <div>
+                <dt>배움</dt>
+                <dd>디지털 금융·데이터 분석</dd>
+              </div>
+              <div>
+                <dt>목표</dt>
+                <dd>기술을 활용한 업무 개선</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="interests" aria-labelledby="interests-title">
+        <div class="section-heading reveal">
+          <p class="section-number">02</p>
+          <div>
+            <p class="eyebrow">INTERESTS</p>
+            <h2 id="interests-title">요즘 집중하는 세 가지</h2>
+          </div>
+        </div>
+
+        <div class="interest-grid">
+          <article class="interest-card reveal">
+            <p class="card-index">01</p>
+            <h3>주택과 도시</h3>
+            <p>현장에서 마주하는 주거 문제와 제도의 작동 방식을 탐구합니다.</p>
+          </article>
+          <article class="interest-card reveal">
+            <p class="card-index">02</p>
+            <h3>데이터 분석</h3>
+            <p>숫자 속 변화를 읽고 판단에 도움이 되는 근거로 정리합니다.</p>
+          </article>
+          <article class="interest-card reveal">
+            <p class="card-index">03</p>
+            <h3>클라우드 개발</h3>
+            <p>작은 아이디어를 실제로 작동하는 웹 서비스로 구현합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section connection-section" id="connection" aria-labelledby="connection-title">
+        <div class="section-heading reveal">
+          <p class="section-number">03</p>
+          <div>
+            <p class="eyebrow">FULL-STACK CONNECTION</p>
+            <h2 id="connection-title">프론트엔드와 백엔드 연결</h2>
+          </div>
+        </div>
+
+        <div class="connection-panel reveal">
+          <div class="connection-copy">
+            <div class="status-line">
+              <span class="status-dot is-loading" id="status-dot" aria-hidden="true"></span>
+              <p class="status-text" id="status-text" role="status" aria-live="polite">
+                FastAPI 서버에 연결하는 중입니다.
+              </p>
+            </div>
+            <p class="connection-description" id="api-message">
+              Vercel의 이 페이지가 Render의 API에 요청을 보내고 있습니다.
+            </p>
+            <button class="button button-primary" id="retry-button" type="button">
+              다시 연결
+            </button>
+          </div>
+
+          <dl class="response-card" aria-label="백엔드 응답 정보">
+            <div>
+              <dt>Frontend</dt>
+              <dd>Vercel</dd>
+            </div>
+            <div>
+              <dt>Backend</dt>
+              <dd>FastAPI · Render</dd>
+            </div>
+            <div>
+              <dt>API status</dt>
+              <dd id="api-status">확인 중</dd>
+            </div>
+            <div>
+              <dt>Server time</dt>
+              <dd id="server-time">—</dd>
+            </div>
+          </dl>
+        </div>
+
+        <noscript>
+          <p class="noscript-message">API 연결을 확인하려면 JavaScript를 켜 주세요.</p>
+        </noscript>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built with HTML, CSS, JavaScript &amp; FastAPI.</p>
+      <a href="#home">맨 위로 ↑</a>
+    </footer>
+  </body>
+</html>

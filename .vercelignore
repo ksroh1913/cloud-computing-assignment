@@ -1,0 +1,5 @@
+backend/
+render.yaml
+tests/
+__pycache__/
+*.pyc
