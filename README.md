@@ -7,9 +7,9 @@ FastAPI 백엔드 API를 호출하도록 연결한 클라우드 컴퓨팅 실습
 
 | 제출 항목 | 주소 |
 |---|---|
-| GitHub 저장소 | 배포 후 입력 |
-| Vercel 개인 소개·연동 페이지 | 배포 후 입력 |
-| Render FastAPI Swagger UI | 배포 후 입력 (`/docs`) |
+| GitHub 저장소 | https://github.com/ksroh1913/cloud-computing-assignment |
+| Vercel 개인 소개·연동 페이지 | https://cloud-computing-assignment-kaist-ksroh.vercel.app |
+| Render FastAPI Swagger UI | https://kyeongsoo-profile-api.onrender.com/docs |
 
 ## 주요 구성
 
