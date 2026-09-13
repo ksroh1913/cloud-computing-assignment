@@ -6,6 +6,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 
+VERCEL_ORIGIN_REGEX = (
+    r"^https://cloud-computing-assignment(?:-[a-z0-9-]+)?\.vercel\.app$"
+)
+
+
 def get_allowed_origins() -> list[str]:
     configured_origins = os.getenv("ALLOWED_ORIGINS", "")
     origins = [origin.strip().rstrip("/") for origin in configured_origins.split(",")]
@@ -38,6 +43,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=get_allowed_origins(),
+    allow_origin_regex=VERCEL_ORIGIN_REGEX,
     allow_credentials=False,
     allow_methods=["GET"],
     allow_headers=["*"],
